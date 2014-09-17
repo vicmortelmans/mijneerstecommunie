@@ -6,18 +6,129 @@
         <style type="text/css">
         </style>
         <link rel="stylesheet" href="jquery.fullPage.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="mijneerstecommunie.css" type="text/css" media="screen"/>
         <link rel="icon" type="image/png" href="favicon.ico"/>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="jquery.easings.min.js"></script>
+        <script src="jquery.slimscroll.min.js"></script>
         <script src="jquery.fullPage.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('#fullpage').fullpage();
+               $('#fullpage').fullpage({
+                   //                    verticalCentered: false,
+                   loopHorizontal: false,
+                   scrollOverflow: true
+               });
+               $('.antwoord').on('click', function() {
+                   $(this).toggleClass('verborgen');
+               });
             });
         </script>
     </head>
     <body>
         <div id="fullpage">
-            <div class="section">Some section 1</div>
+            <div class="section" id="de-zondeval">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 1</h1>
+                            <h2>De Zondeval</h2>
+                        </div>
+                        <div class="tekst">
+                            <div class="kolom">
+                                <p>In het begin schiep de goede God Adam en Eva. Zij waren de eerste mensen op aarde. Hij plaatste hen in een prachtige tuin, waar zij gelukkig waren. Deze tuin was het Paradijs. In het paradijs leefden Adam en Eva in vriendschap met God.</p> 
+                                <p>De goede God gaf Adam en Eva in het paradijs één gebod: Zij mochten van alle bomen de vruchten eten, behalve van één boom; de boom van kennis van goed en kwaad. "Als jullie van deze boom de vruchten eten, moeten jullie sterven", zei de goede God tot Adam en Eva. Daarmee wilde Hij hun gehoorzaamheid testen.</p> 
+                                <p>De duivel, in de gedaante van een slang, verleidde Eva en Adam om van de verboden vrucht te eten. </p>
+                            </div>
+                            <div class="kolom">
+                                <p>Zij overtraden daardoor het gebod van God en begingen een zware zonde. Door hun ongehoorzaamheid deden Adam en Eva iets zeer slecht tegen God, die enkel goed is. </p>
+                                <p>Omdat Adam en Eva gezondigd hebben, verdienen zij de straf waarmee God hun heeft gedreigd, als zij niet naar Hem zouden luisteren. Nu moeten zij sterven. Een Engel verdrijft hen uit het Aards Paradijs.</p> 
+                                <p>Adam en Eva berouwen hun zware zonde, die zij uit ongehoorzaamheid tegen de goede God begaan hebben. God vergeeft hen de schuld en Hij belooft hun een Redder, die hen van de slavernij aan de zonde zal verlossen: Onze Heer en Heiland Jezus Christus.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="regel">Als ik een gebod van de goede God overtreed, bega ik een zonde</div>
+                        <div class="regel">Als ik een zonde bega, ben ik ongehoorzaam aan God</div>
+                        <div class="regel">Als ik aan de goede God ongehoorzaam ben, verdien ik een straf</div>
+                        <div class="regel">Als ik de zonde berouw, vergeeft mij de goede God mijn schuld</div>
+                    </div>
+                </div> 
+                <div class="slide vragen">
+                    <div class="vragen-en-antwoorden">
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat begingen Adam en Eva, toen zij Gods gebod overtraden? </div>
+                            <div class="antwoord verborgen">Zij begingen een zonde. </div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat verdienden Adam en Eva, toen zij de zonde begingen? </div>
+                            <div class="antwoord verborgen">Zij verdienden een straf. </div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat was de straf voor Adam en Eva? </div>
+                            <div class="antwoord verborgen">Zij moesten eenmaal sterven. </div>
+                            <div class="antwoord verborgen">Zij moesten het Paradijs verlaten. </div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat deden Adam en Eva, opdat God hen hun schuld vergaf? </div>
+                            <div class="antwoord verborgen">Zij berouwden hun zonde. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="de-verloren-zoon">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 2</h1>
+                            <h2>De Verloren Zoon</h2>
+                        </div>
+                        <div class="tekst">
+                            <div class="kolom">
+                                <p>Jezus vertelde een verhaal:</p>
+                                <p>Een man had twee zonen. De oudste was vlijtig, maar de jongste was lui en dacht enkel aan genieten. Op een dag vroeg de jongste aan zijn vader het geld dat hem als erfdeel toekwam en hij vertrok naar een ver land. Daar verspilde hij al zijn geld met feesten. Toen hij niets meer had, brak er een hongersnood uit. Omdat hij nu niets meer had, moest hij werk zoeken om niet te verhongeren. Zij gaven hem de opdracht de varkens te hoeden. Hij wilde graag van de schillen van de varkens mee¬-eten, maar niemand gaf ze hem. </p> 
+                                <p>Zo begon hij zich zijn nietsnuttige leven te berouwen. Hij zei bij zichzelf: "In het huis van mijn vader hebben de knechten genoeg te eten, terwijl ik hier sterf van de honger. Ik zal naar mijn vader terugkeren en hem om vergeving vragen.</p> 
+                            </div>
+                            <div class="kolom">
+                                <p>Ik zal hem zeggen, dat ik tegen hem gezondigd heb. Ik zal hem mijn schuld bekennen. Ik ben niet meer waard zijn zoon te heten. Tot straf mag hij mij als een knecht behandelen." Daarna maakte hij zich op om naar huis terug te keren. Toen zijn vader hem zag komen, liep hij hem tegemoet, omarmde en kuste hem. De verloren zoon viel op de knieën en bad zijn vader berouwvol om vergiffenis van zijn zonden, die hij tegen hem begaan had. Zijn vader echter hielp hem overeind en beval de knechten om de berouwvolle zoon het beste kleed aan te doen, een ring aan de vinger te doen en schoenen te geven. Dan zorgde hij voor een groot feest voor zijn verloren zoon, die teruggevonden was. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="regel">De vader vergeeft zijn zoon, omdat de zoon zijn zonden tegen de vader berouwt, hem om vergeving vraagt en hem belooft zich te beteren. </div>
+                        <div class="regel">Zo vergeeft de goede God de mensen, als zij hun zonden tegen Hem berouwen, Hem om vergeving vragen en Hem beloven zich te beteren. </div>
+                    </div>
+                </div> 
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="regel">De goede God doet zoals de vader van de verloren zoon. Hij vergeeft ons onze zonden in de heilige biecht,</div>
+                        <div class="regel">als wij Hem onze zonden bekennen, 
+                            -als wij onze fouten berouwen, 
+                            -als wij voor onze misdaden boete doen, 
+                            -als wij bereid zijn ons te beteren.
+                        </div>
+                        <div class="regel">In de heilige biecht vervangt de priester de plaats van de goede God. De priester heeft de volmacht om in Naam van Onze Heer Jezus Christus zonden te vergeven. </div>
+                    </div>
+                </div> 
+                <div class="slide vragen">
+                    <div class="vragen-en-antwoorden">
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Vertel het verhaal van de verloren zoon uit het geheugen na!  </div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat moeten wij doen opdat de goede God onze zonden in de heilige biecht vergeeft? </div>
+                            <div class="antwoord verborgen">Wij moeten aan de goede God onze schuld biechten. </div>
+                            <div class="antwoord verborgen">Wij moeten onze fouten berouwen. </div>
+                            <div class="antwoord verborgen">Wij moeten voor onze zonden boete doen. </div>
+                            <div class="antwoord verborgen">Wij moeten bereid zijn ons te beteren. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="section">Some section 2</div>
             <div class="section">Some section 3</div>
             <div class="section">Some section 4</div>
