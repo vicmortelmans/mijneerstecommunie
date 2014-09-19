@@ -120,6 +120,21 @@ td {
     box-shadow: 0px 6px 12px 0px #000;
 }
 
+.kleine-regel {
+    padding: 24px;
+    display: inline-block;
+    background-color: #FFE5A2;
+    background-image: url(img/ricepaper.png);
+    width: 125px;
+    margin: 24px;
+    color: #5e6f19;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 6px 12px 0px #000;
+    -moz-box-shadow: 0px 6px 12px 0px #000;
+    box-shadow: 0px 6px 12px 0px #000;
+}
+
 img.breed {
     width: 100%;
 }
@@ -202,6 +217,27 @@ img.geplakt {
     background-image: url(img/gebod-1.jpg);
     background-position: top center;
 }
+
+#a-gebod-god2 {
+    background-image: url(img/gebod-2.jpg);
+    background-position: center center;
+}
+
+#a-gebod-god3 {
+    background-image: url(img/gebod-3.jpg);
+    background-position: top center;
+}
+
+#a-gebod-god4 {
+    background-image: url(img/gebod-4.jpg);
+    background-position: center center;
+}
+
+#a-gebod-god5 {
+    background-image: url(img/gebod-5.jpg);
+    background-position: center center;
+}
+
 .onthoud {
     background-color: rgba(127,127,127,0.5);
 }
