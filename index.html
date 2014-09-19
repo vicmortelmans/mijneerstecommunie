@@ -17,7 +17,9 @@
                $('#fullpage').fullpage({
                    //                    verticalCentered: false,
                    loopHorizontal: false,
-                   scrollOverflow: true
+                   scrollOverflow: true,
+                   anchors: ['les1', 'les2', 'les3', 'les4', 'les5', 'les6', 'gebodgod1'],
+                   menu: '#menu'
                });
                $('.antwoord').on('click', function() {
                    $(this).toggleClass('verborgen');
@@ -26,10 +28,19 @@
         </script>
     </head>
     <body>
+        <ul id="menu">
+            <li data-menuanchor="les1" class="active"><a href="#les1">1</a></li>
+            <li data-menuanchor="les2"><a href="#les2">2</a></li>
+            <li data-menuanchor="les3"><a href="#les3">3</a></li>
+            <li data-menuanchor="les4"><a href="#les4">4</a></li>
+            <li data-menuanchor="les5"><a href="#les5">5</a></li>
+            <li data-menuanchor="les6"><a href="#les6">6</a></li>
+            <li data-menuanchor="gebodgod1"><a href="#gebodgod1">I</a></li>
+        </ul>
         <div id="fullpage">
 
 
-            <div class="section" id="de-zondeval">
+            <div class="section" id="a-les1">
                 <div class="slide inhoud">
                     <div class="inhoud-elementen">
                         <div class="hoofding-elementen">
@@ -82,7 +93,7 @@
             </div>
 
 
-            <div class="section" id="de-verloren-zoon">
+            <div class="section" id="a-les2">
                 <div class="slide inhoud">
                     <div class="inhoud-elementen">
                         <div class="hoofding-elementen">
@@ -141,7 +152,7 @@
             </div>
             
             
-            <div class="section" id="de-weg-naar-de-hemel">
+            <div class="section" id="a-les3">
                 <div class="slide inhoud">
                     <div class="inhoud-elementen">
                         <div class="hoofding-elementen">
@@ -183,7 +194,7 @@
             </div>
             
             
-            <div class="section" id="het-verstand-en-de-wil">
+            <div class="section" id="a-les4">
                 <div class="slide inhoud">
                     <div class="inhoud-elementen">
                         <div class="hoofding-elementen">
@@ -214,12 +225,12 @@
             </div>
             
 
-            <div class="section" id="de-dagelijkse-en-de-zware-zonde">
+            <div class="section" id="a-les5">
                 <div class="slide inhoud">
                     <div class="inhoud-elementen">
                         <div class="hoofding-elementen">
                             <h1>Les 5</h1>
-                            <h2>De Dagelijkse en de Zware Zonde</h2>
+                            <h2>De Zonde</h2>
                         </div>
                         <div class="tekst">
                             <p>Wie een gebod van de goede God wetens (hij weet dat het zonde is) en willens (hij wil dat doen, hij wordt niet gedwongen) overtreedt, begaat een zonde. Maar niet alle zonden wegen even zwaar. Er zijn zonden die de ziel van de goede God scheiden; wij noemen dat doodzonden (of zware zonden). Er zijn ook zonden die de ziel voor God bevlekken; wij noemen dat dagelijkse zonden. </p>
@@ -236,11 +247,25 @@
                 <div class="slide onthoud">
                     <div class="regels">
                         <div class="grote-regel">
-                            <img class="geplakt" src="img/de-zonde-2.png"/>
+                            <img class="geplakt" src="img/de-zonde-1.png"/>
                             <p>Ge ziet een jongen die gaarne en blij naar de kerk gaat. Hij heeft een reine ziel. Zijn Engelbewaarder is tevreden over hem. Hij is in staat van genade. Daarom is de duivel niet te zien.</p>
                         </div> 
-                        <div class="grote-regel"></div> 
-                        <div class="grote-regel"></div> 
+                    </div> 
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">
+                            <img class="geplakt" src="img/de-zonde-2.png"/>
+                            <p>Deze jongen ziet de goede God niet meer zo gaarne. Hij twijfelt of hij nog wel naar de kerk toe zal gaan. Zijn Engelbewaarder is bezorgd over hem; de duivel lacht en staat op de loer. Dat is de dagelijkse zonde. De jongen bevindt zich nog wel in staat van genade, maar is in gevaar om in een doodzonde te vallen. </p>
+                        </div> 
+                    </div> 
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">
+                            <img class="geplakt" src="img/de-zonde-3.png"/>
+                            <p>Hier bevindt de jongen zich in de macht van de duivel, omdat hij een doodzonde begaan heeft. Hij wil niet naar de kerk gaan om te biechten. De Engelbewaarder is droevig; de duivel is blij. Als de jongen met een doodzonde en zonder berouw sterft, komt hij in de hel. </p>
+                        </div> 
                     </div>
                 </div> 
                 <div class="slide vragen">
@@ -251,16 +276,90 @@
                         </div>
                         <div class="vraag-en-antwoord">
                             <div class="vraag">Welke zonden scheiden onze ziel van de goede God?</div>
-                            <div class="antwoord verborgen">De <u><b>doodzonden scheiden de ziel van de goede God</b></u>.</div>
+                            <div class="antwoord verborgen">De <u><b>doodzonden</b></u> scheiden de ziel van de goede God.</div>
                         </div>
                         <div class="vraag-en-antwoord">
                             <div class="vraag">Welke zonden bevlekken wel de ziel voor de goede God, maar scheiden ons niet van Hem?</div>
-                            <div class="antwoord verborgen">De <u><b>dagelijkse zonden bevlekken de ziel</b></u> voor de goede God.</div>
+                            <div class="antwoord verborgen">De <u><b>dagelijkse zonden</b></u> bevlekken de ziel voor de goede God.</div>
                         </div>
                         <div class="vraag-en-antwoord">
                             <div class="vraag">Waarom is de dagelijkse zonde gevaarlijk, ook al verliezen wij niet geheel de vriendschap met God?</div>
                             <div class="antwoord verborgen">De dagelijkse zonde is <u><b>gevaarlijk</b></u>, omdat wij daardoor <u><b>gemakkelijker de doodzonde begaan</b></u>.</div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="section" id="a-les6">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 6</h1>
+                            <h2>De Tien Geboden van God</h2>
+                        </div>
+                        <div class="tekst">
+                            <div class="kolom">
+                                <p><b>Geboden over de liefde tot de goede God </b></p>
+                                <p>Bovenal bemin één God
+                                <br/>Zweer niet ijdel, vloek noch spot
+                                <br/>Heilig steeds de dag des Heren</p>
+                            </div>
+                            <div class="kolom">
+                                <p><b>Geboden over de naastenliefde<br/>(de mensen onder elkaar)</b></p>
+                                <p>Vader, moeder zult gij eren
+                                <br/>Dood niet, geef geen ergernis
+                                <br/>Doe nooit wat onkuisheid is
+                                <br/>Vlucht het stelen en bedriegen
+                                <br/>Ook de achterklap en 't liegen
+                                <br/>Wees steeds kuis in uw gemoed
+                                <br/>En begeer nooit iemands goed</p>
+                            </div>
+                            <div class="prent">
+                                <img class="geplakt" src="img/schema-de-tien-geboden.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="section" id="a-gebod-god1">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 6</h1>
+                            <h2>Iº Gebod van God</h2>
+                        </div>
+                        <div class="tekst">
+                            <p>Eerste Gebod van God: <b>Bovenal bemin één God</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil geloven in God</div>
+                        <div class="regel">Ik moet aan de Drievuldige God geloven</div>
+                        <div class="regel">Ik moet alles geloven wat God ons door de Kerk leert</div>
+                        <div class="regel">Ik moet het geloof verdedigen</div>
+                        <div class="regel">Ik moet opletten bij de catechismus</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil tot God bidden</div>
+                        <div class="regel">Ik moet graag, aandachtig en eerbiedig bidden</div>
+                        <div class="regel">Ik bid bij het opstaan, eten en slapen gaan</div>
+                        <div class="regel">Ik zeg schietgebeden</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil God bovenal beminnen</div>
+                        <div class="regel">Ik denk graag aan God</div>
+                        <div class="regel">Ik vervul graag de wil van God</div>
+                        <div class="regel">Ik doe alles uit liefde tot God</div>
+                        <div class="regel">Ik moet meer van God dan van de mensen houden</div>
                     </div>
                 </div>
             </div>

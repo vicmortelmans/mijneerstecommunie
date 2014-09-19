@@ -1,4 +1,31 @@
-.section {
+#menu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    font: bolder 28pt/36pt serif;
+    z-index: 10;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu li {
+    display: inline;
+    float: left;
+    height: 48px;
+    width: 5%;
+    text-align: center;
+}
+#menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu li.active {
+    background-color: rgba(127,127,127,0.5);
+}
+
+.section, .slide {
     background-size: cover;
     background-attachment: fixed;
 }
@@ -8,6 +35,7 @@
 }
 
 .hoofding-elementen {
+    padding-top: 48px;
     background-color: rgba(127,127,127,0.5);
 }
 
@@ -36,6 +64,18 @@ h2 {
     overflow: auto;
     font: 10pt/14pt sans-serif;
     color: #5e6f19;
+}
+
+.tekst .prent {
+    text-align: center;
+}
+
+table {
+    border-spacing: 12px;
+}
+
+td {
+    vertical-align: top;
 }
 
 .kolom {
@@ -128,26 +168,40 @@ img.geplakt {
     box-shadow: 0px 3px 6px 0px #000;
 }
 
-#de-zondeval {
+#a-les1 {
     background-image: url(img/het-aards-paradijs.jpg);
     background-position: bottom center;
 }
 
-#de-verloren-zoon {
+#a-les2 {
     background-image: url(img/de-verloren-zoon.jpg);
     background-position: center center;
 }
 
-#de-weg-naar-de-hemel {
+#a-les3 {
     background-image: url(img/de-smalle-weg.jpg);
     background-position: top center;
 }
 
-#het-verstand-en-de-wil {
+#a-les4 {
     background-image: url(img/jezus-beproeving.jpg);
     background-position: top center;
 }
 
+#a-les5 {
+    background-image: url(img/drie-eenheid.jpg);
+    background-position: top center;
+}
+
+#a-les6 {
+    background-image: url(img/de-tien-geboden.jpg);
+    background-position: center center;
+}
+
+#a-gebod-god1 {
+    background-image: url(img/gebod-1.jpg);
+    background-position: top center;
+}
 .onthoud {
     background-color: rgba(127,127,127,0.5);
 }
