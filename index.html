@@ -14,22 +14,23 @@
         <script src="jquery.fullPage.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-               $('#fullpage').fullpage({
-                   //                    verticalCentered: false,
-                   loopHorizontal: false,
-                   scrollOverflow: true,
-                   anchors: ['les1', 'les2', 'les3', 'les4', 'les5', 'les6', 'gebodgod1', 'gebodgod2', 'gebodgod3', 'gebodgod4', 'gebodgod5'],
-                   menu: '#menu'
-               });
-               $('.antwoord').on('click', function() {
-                   $(this).toggleClass('verborgen');
-               });
+            $('#fullpage').fullpage({
+            //                    verticalCentered: false,
+            loopHorizontal: false,
+            scrollOverflow: true,
+            anchors: ['titel', 'les1', 'les2', 'les3', 'les4', 'les5', 'les6', 'gebodgod1', 'gebodgod2', 'gebodgod3', 'gebodgod4', 'gebodgod5', 'gebodgod6', 'gebodgod7', 'gebodgod8', 'les7', 'les8', 'les9', 'les10'],
+            menu: '#menu'
+            });
+            $('.antwoord').on('click', function() {
+            $(this).toggleClass('verborgen');
+            });
             });
         </script>
     </head>
     <body>
         <ul id="menu">
-            <li data-menuanchor="les1" class="active"><a href="#les1">1</a></li>
+            <li data-menuanchor="titel" class="active"><a href="#titel">+</a></li>
+            <li data-menuanchor="les1"><a href="#les1">1</a></li>
             <li data-menuanchor="les2"><a href="#les2">2</a></li>
             <li data-menuanchor="les3"><a href="#les3">3</a></li>
             <li data-menuanchor="les4"><a href="#les4">4</a></li>
@@ -40,10 +41,31 @@
             <li data-menuanchor="gebodgod3"><a href="#gebodgod3">III</a></li>
             <li data-menuanchor="gebodgod4"><a href="#gebodgod4">IV</a></li>
             <li data-menuanchor="gebodgod5"><a href="#gebodgod5">V</a></li>
+            <li data-menuanchor="gebodgod6"><a href="#gebodgod6">VI</a></li>
+            <li data-menuanchor="gebodgod7"><a href="#gebodgod7">VII</a></li>
+            <li data-menuanchor="gebodgod8"><a href="#gebodgod8">VIII</a></li>
+            <li data-menuanchor="les7"><a href="#les7">7</a></li>
+            <li data-menuanchor="les8"><a href="#les8">8</a></li>
+            <li data-menuanchor="les9"><a href="#les9">9</a></li>
+            <li data-menuanchor="les10"><a href="#les10">10</a></li>
         </ul>
         <div id="fullpage">
-
-
+            
+            
+            <div class="section" id="a-titel">
+                <div class="inhoud-elementen">
+                    <div class="titel">
+                        <p>Voorbereiding op de eerste communie</p>
+                    </div>
+                    <div class="tekst">
+                        <div class="kolom">
+                            <p>Navigeer naar boven en beneden tussen de lessen en naar rechts en links binnen iedere les.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
             <div class="section" id="a-les1">
                 <div class="slide inhoud">
                     <div class="inhoud-elementen">
@@ -95,8 +117,8 @@
                     </div>
                 </div>
             </div>
-
-
+            
+            
             <div class="section" id="a-les2">
                 <div class="slide inhoud">
                     <div class="inhoud-elementen">
@@ -126,10 +148,10 @@
                     <div class="regels">
                         <div class="grote-regel">De <b>goede God</b> doet zoals de vader van de verloren zoon. Hij vergeeft ons onze zonden in de heilige biecht</div>
                         <div>
-                           <div class="regel">als wij Hem onze zonden <b>bekennen</b></div>
-                           <div class="regel">als wij onze fouten <b>berouwen</b></div>
-                           <div class="regel">als wij voor onze misdaden <b>boete</b> doen</div> 
-                           <div class="regel">als wij bereid zijn ons te <b>beteren</b></div>
+                            <div class="regel">als wij Hem onze zonden <b>bekennen</b></div>
+                            <div class="regel">als wij onze fouten <b>berouwen</b></div>
+                            <div class="regel">als wij voor onze misdaden <b>boete</b> doen</div> 
+                            <div class="regel">als wij bereid zijn ons te <b>beteren</b></div>
                         </div>
                         <div class="grote-regel">In de heilige biecht vervangt de <b>priester</b> de plaats van de goede God. De priester heeft de volmacht om in Naam van Onze Heer Jezus Christus zonden te vergeven. </div>
                     </div>
@@ -228,7 +250,7 @@
                 </div> 
             </div>
             
-
+            
             <div class="section" id="a-les5">
                 <div class="slide inhoud">
                     <div class="inhoud-elementen">
@@ -305,18 +327,18 @@
                         <div class="kolom">
                             <p><b>Geboden over de liefde tot de goede God </b></p>
                             <p>Bovenal bemin één God
-                            <br/>Zweer niet ijdel, vloek noch spot
-                            <br/>Heilig steeds de dag des Heren</p>
+                                <br/>Zweer niet ijdel, vloek noch spot
+                                <br/>Heilig steeds de dag des Heren</p>
                         </div>
                         <div class="kolom">
                             <p><b>Geboden over de naastenliefde<br/>(de mensen onder elkaar)</b></p>
                             <p>Vader, moeder zult gij eren
-                            <br/>Dood niet, geef geen ergernis
-                            <br/>Doe nooit wat onkuisheid is
-                            <br/>Vlucht het stelen en bedriegen
-                            <br/>Ook de achterklap en 't liegen
-                            <br/>Wees steeds kuis in uw gemoed
-                            <br/>En begeer nooit iemands goed</p>
+                                <br/>Dood niet, geef geen ergernis
+                                <br/>Doe nooit wat onkuisheid is
+                                <br/>Vlucht het stelen en bedriegen
+                                <br/>Ook de achterklap en 't liegen
+                                <br/>Wees steeds kuis in uw gemoed
+                                <br/>En begeer nooit iemands goed</p>
                         </div>
                         <div class="prent">
                             <img class="geplakt" src="img/schema-de-tien-geboden.jpg"/>
@@ -578,6 +600,477 @@
                     </div>
                 </div>
             </div>
+            
+            
+            <div class="section" id="a-gebod-god6">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 5</h1>
+                            <h2>VI/IXº Gebod van God</h2>
+                        </div>
+                        <div class="tekst">
+                            <p>Zesde en Negende Gebod van God:</p>
+                            <p class="groot"><b>Doe nooit wat onkuisheid is</b></p>
+                            <p class="groot"><b>Wees steeds kuis in uw gemoed</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels-tekst">
+                        <div class="tekst">
+                            <div class="kolom">
+                                De goede God heeft ons lichaam rein en heilig geschapen. 
+                                Maar er zijn aan ons lichaam delen, die wij voor anderen steeds toegedekt houden en niet zonder reden aanraken. Deze delen heten schaamdelen. Men noemt ze zo, omdat men zich schamen moet, als men ze voor anderen ontbloot. 
+                            </div>
+                            <div class="kolom">
+                                Een schaamtevolle mens praat daarover niet met anderen, als het niet nodig is. Wie echter de schaamdelen bij zichzelf of bij anderen zonder reden bekijkt of aanraakt, en wie over deze delen zonder reden spreekt, is schaamteloos of zedeloos en beledigt ook de goede God.
+                            </div>
+                            <div class="prent">
+                                <img class="geplakt" src="img/schema-gebod-6-9.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil in woorden en werken kuis zijn</div>
+                        <div class="regel">Ik moet schaamdelen niet expres bekijken</div>
+                        <div class="regel">Ik moet niet spreken over onzedige of onkuise zaken</div>
+                        <div class="regel">Ik mag geen onzedige praat beluisteren</div>
+                        <div class="regel">Ik mag niets onkuis doen, alleen of met anderen</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil in gedachten en woorden kuis zijn</div>
+                        <div class="regel">Ik mag geen onkuise zaken denken of wensen</div>
+                        <div class="regel">Ik mag anderen niet verleiden tot zedeloze dingen</div>
+                        <div class="regel">Ik moet de plaatsen vermijden, waar zedeloze dingen  gebeuren</div>
+                        <div class="regel">Ik moet de mensen mijden, die anderen tot zedeloosheid verleiden</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="section" id="a-gebod-god7">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 5</h1>
+                            <h2>VII/Xº Gebod van God</h2>
+                        </div>
+                        <div class="tekst">
+                            <p>Zevende en Tiende Gebod van God:</p>
+                            <p class="groot"><b>Vlucht het stelen en bedriegen</b></p>
+                            <p class="groot"><b>Begeer nooit iemands goed</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil geen diefstal begaan</div>
+                        <div class="regel">Ik mag vreemde zaken niet wegnemen</div>
+                        <div class="regel">Ik mag vreemde zaken niet houden</div>
+                        <div class="regel">Ik moet geleende zaken teruggeven</div>
+                        <div class="regel">Ik moet gevonden voorwerpen aan de bezitter teruggeven</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil geen schade berokkenen</div>
+                        <div class="regel">Ik mag vreemde zaken niet beschadigen</div>
+                        <div class="regel">Ik moet met geleende zaken zorgvuldig omgaan</div>
+                        <div class="regel">Ik moet gemaakte schade weer herstellen</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil niet snoepen</div>
+                        <div class="regel">Ik mag geen zoetigheden  wegnemen om ze op te eten</div>
+                        <div class="regel">Ik moet eerst om toestemming vragen, als ik iets te eten wil hebben</div>
+                        <div class="grote-regel">Ik wil niet wensen iets te stelen of te beschadigen</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="section" id="a-gebod-god8">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 5</h1>
+                            <h2>VIIIº Gebod van God</h2>
+                        </div>
+                        <div class="tekst">
+                            <p>Achtste Gebod van God:</p>
+                            <p class="groot"><b>Vlucht de achterklap en 't liegen</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil waarheidsgetrouw zijn</div>
+                        <div class="regel">Ik mag noch in nood, noch voor de grap liegen</div>
+                        <div class="regel">Ik mag niet huichelen, door iets in mijn voordeel of tot nadeel van anderen anders voor te stellen dan het is</div>
+                        <div class="regel">Ik mag niet kwaadspreken, door over anderen onware dingen te zeggen of de schuld aan anderen te geven</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil zwijgzaam zijn</div>
+                        <div class="regel">Ik mag de fouten van anderen niet zonder reden verder vertellen</div>
+                        <div class="regel">Ik mag de fouten van anderen niet overdrijven</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Ik wil eerlijk zijn</div>
+                        <div class="regel">Ik mag niet bedriegen</div>
+                        <div class="regel">Ik mag niet vals spelen</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">De tong, waarop Jezus na de heilige Communie ligt, mag niet door een leugen bevlekt worden</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="section" id="a-les7">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 7</h1>
+                            <h2>De Vijf Geboden van de Kerk</h2>
+                        </div>
+                        <div class="tekst">
+                            <p><b>De 5 geboden van de Kerk </b></p>
+                            <div class="kolom">
+                                <p> Zon- en feestdag zult gij eren. 
+                                    <br/>Op boet- en vrijdag vlees ontberen. 
+                                    <br/>Houd de vasten ongeschonden. 
+                                </p>
+                            </div>
+                            <div class="kolom">
+                                <p> Biecht minstens eens per jaar uw zonden. 
+                                    <br/>En nut rond Pasen 't Brood des Heren. 
+                                </p>
+                            </div>
+                            <div class="prent">
+                                <img class="geplakt" src="img/schema-de-vijf-geboden.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Iedere zondag moeten we naar de H. Mis gaan. Ook op de grote feestdagen van Kerstmis, Hemelvaart, Maria-Ten-Hemel-Opneming en Allerheiligen moeten we naar de H. Mis gaan</div>
+                        <div class="grote-regel">Op vastendagen mag men maar één volle maaltijd nemen. Verplichte vastendagen zijn Aswoensdag en Goede Vrijdag. 
+                            Het vastengebod geldt voor Katholieken van het einde van 
+                            hun 18de tot het begonnen 60ste levensjaar
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel">Op onthoudingsdagen mag men geen vlees eten. Onthoudingsdagen zijn alle vrijdagen van het jaar en Aswoensdag. De onthouding van vlees geldt voor Katholieken vanaf het voleindigde 14de levensjaar</div>
+                        <div class="grote-regel">Op vrijdag moeten we een klein offer brengen, omdat Jezus dan voor ons aan het kruis gestorven is, daarom eten we geen vlees</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="section" id="a-les8">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 8</h1>
+                            <h2>De Biecht</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div>
+                            <div class="grote-regel">Als ik mijn ziel door een zonde bevlekt heb, wil ik zo vlug mogelijk biechten. In de biechtstoel zeg ik al mijn zonden aan de priester, opdat Jezus ze mij vergeeft. 
+                                Om te biechten zijn zes dingen belangrijk.
+                            </div>
+                        </div>
+                        <div class="kleine-regel">Bidden</div>
+                        <div class="kleine-regel">Bezinnen</div>
+                        <div class="kleine-regel">Berouw</div>
+                        <div class="kleine-regel">Beteren</div>
+                        <div class="kleine-regel">Belijden</div>
+                        <div class="kleine-regel">Boeten</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>Bidden</b> 
+                            <img class="geplakt" src="img/biecht-bidden.jpg"/>
+                            Ik bid tot de Heilige Geest, opdat Hij mij helpt om een goede biecht te spreken.
+                        </div>
+                        <div class="regel">‘Kom Heilige Geest, verlicht mijn verstand om mijn zonden te kennen en geef mij de genade om een oprecht berouw te verwekken!’</div>
+                        <div class="regel">‘Sterk mij, opdat ik mij betere!’</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>Bezinnen </b> 
+                            <img class="geplakt" src="img/biecht-bezinnen.jpg"/>
+                            Ik doe een gewetensonderzoek met behulp van een biechtspiegel. Het geweten is de stem van God in mijn ziel. Het zegt mij, wat goed en wat slecht is. 
+                        </div>
+                        <div class="regel">Het geweten zet mij aan tot het goede en zegt: "doe het!"</div>
+                        <div class="regel">Het geweten waarschuwt mij voor het slechte en zegt: "doe het niet!"</div>
+                        <div class="regel">Het geweten beloont mij als ik het goede gedaan heb</div>
+                        <div class="regel">Het geweten berispt mij als ik het slechte gedaan heb</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>Berouw  </b> 
+                            <img class="geplakt" src="img/biecht-berouw.jpg"/>
+                            Het belangrijkste bij de biecht is het berouw. Zonder berouw is er ook geen vergiffenis van de zonden.  
+                        </div>
+                        <div class="grote-regel">Akte van Berouw: <br/>
+                            Mijn Heer en mijn God, het is mij leed dat ik tegen uw opperste Majesteit misdaan heb. Ik verfoei al mijn zonden, niet alleen omdat ik uw straffen heb verdiend, maar vooral omdat ze U mishagen, die oneindig volmaakt en alle liefde waardig zijt. Ik maak het vast voornemen mijn leven te beteren en de 
+                            gelegenheden tot zonde te vluchten. In dit berouw wil ik leven en sterven. 
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>Beteren </b> 
+                            Ik maak het goede voornemen de gelegenheden tot zonde te vluchten en de goede God niet meer te beledigen. 
+                        </div>
+                        <div class="regel">Jezus zei tegen de overspelige vrouw: “Ga heen en zondig voortaan niet meer!” </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>Belijden </b> 
+                            <img class="geplakt" src="img/biecht-belijden.jpg"/>
+                            In de biechtstoel belijd ik mijn zonden die ik me door het gewetensonderzoek herinnerd heb. 
+                        </div>
+                        <div class="regel">Wees deemoedig en laat niets weg! </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>Boeten  </b> 
+                            Na de biecht bid ik de penitentie of doe de boete, die mij de priester tot verzoening voor mijn zondenstraffen opgedragen heeft. 
+                        </div>
+                        <div class="regel">Ik wil Jezus danken voor de vergeving van mijn zonden </div>
+                        <div class="regel-prent"><img src="img/kinderen-biechten.jpg"/></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="section" id="a-les9">
+                <div class="slide inhoud">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 9</h1>
+                            <h2>Jezus komt tot ons</h2>
+                        </div>
+                    </div>
+                    <div class="tekst">
+                        <div class="kolom">
+                            Om de mensen van de zonden te verlossen is Jezus een mensenkind geworden dat uit Maria geboren werd en door haar opgevoed is. Daarom heeft Jezus voor ons geleden en is Hij aan het Kruis gestorven, opdat wij het eeuwig leven zouden hebben. 
+                            Jezus is op het Kruis gestorven om de mensen te redden. 
+                        </div>
+                        <div class="kolom">
+                            Dit Kruisoffer hernieuwt Jezus in de H. Mis. In de consecratie wordt het brood veranderd in zijn Lichaam en de wijn in 
+                            zijn Bloed. In de H. Communie ontvangen wij Jezus, die ons met zijn goddelijke genade voedt. Het Lichaam van Jezus dient tot spijs van onze zielen. 
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>Wie is Jezus Christus?</b></div>
+                        <div class="regel">
+                            <b>Jezus is waarlijk God</b>
+                            <br/>Jezus is de tweede Goddelijke Persoon van de Allerheiligste Drievuldigheid.
+                        </div>
+                        <div class="regel">
+                            <b>Jezus is waarlijk mens</b>
+                            <br/>De hemelse Vader heeft zijn Zoon naar de aarde gezonden om de mensen van de zonden te verlossen.
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>Hoe komt Jezus tot ons?</b></div>
+                        <div class="regel">In de stal van Bethlehem kwam de Zoon van God in een
+                            menselijke gestalte tot ons, opdat wij door zijn Kruisoffer tot 
+                            eeuwig leven zouden geboren worden.
+                            Aan het Kruis heeft Jezus zijn vlees en bloed voor ons 
+                            geofferd.</div>
+                        <div class="regel">Op het altaar komt de Zoon van God tot ons onder de
+                            gedaante van brood en wijn. Door zijn kruisoffer kunnen wij 
+                            het eeuwig leven verwerven. In de H. Mis geeft Jezus ons zijn 
+                            vlees en bloed als spijs.</div>
+                    </div>
+                </div>
+                <div class="slide onthoud">
+                    <div class="regels">
+                        <div class="grote-regel"><b>De heilige Communie is de goddelijke spijs voor de ziel om het
+                            eeuwig leven te verwerven</b></div>
+                        <div class="grote-regel">Als ons lichaam geen voedsel krijgt, sterven we lichamelijk</div>
+                        <div class="grote-regel">Als onze ziel geen voedsel krijgt, sterven we geestelijk</div>
+                    </div>
+                </div>
+                <div class="slide vragen">
+                    <div class="vragen-en-antwoorden">
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wie is Jezus?</div>
+                            <div class="antwoord verborgen">Jezus is waarlijk God en waarlijk mens.</div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat gebeurt er met het <b>brood</b> bij de consecratie van de H. Mis?</div>
+                            <div class="antwoord verborgen">Het brood verandert in het <b>Lichaam</b> van Christus.</div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat gebeurt er met de <b>wijn</b> bij de consecratie van de H. Mis?</div>
+                            <div class="antwoord verborgen">De wijn verandert in het <b>Bloed</b> van Christus.</div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Waarmee voedt Jezus onze ziel in de H. Communie?</div>
+                            <div class="antwoord verborgen">Jezus voedt onze ziel in de H. Communie met zijn eigen Vlees en Bloed.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="section">
+                <div class="slide inhoud"  id="a-les10-bruiloft-te-kana">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h1>Les 10</h1>
+                            <h2>De Voorafbeeldingen van het Altaarsacrament</h2>
+                        </div>
+                    </div>
+                    <div class="tekst">
+                        <div class="kolom">
+                            Jezus stelde het Altaarsacrament (de H. Mis) niet in zonder 
+                            eerst de mensen te beleren. Hij bereidde hen voor om zijn 
+                            Lichaam en zijn Bloed te ontvangen in de H. Communie onder 
+                            de gedaante van brood en van wijn.
+                        </div>
+                        <div class="kolom">
+                            Er zijn twee wonderen waardoor Jezus de mensen op het
+                            Altaarsacrament voorbereidde; de <b>broodvermenigvuldiging</b> 
+                            en de verandering van water in wijn op de <b>bruiloft te Kana</b>. 
+                        </div>
+                    </div>
+                </div>
+                <div class="slide inhoud"  id="a-les10-bruiloft-te-kana">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h2>Het wonder op de bruiloft te Kana</h2>
+                        </div>
+                    </div>
+                    <div class="tekst">
+                        <div class="kolom">
+                            Te Kana in Galilea was er een bruiloft.
+                            De moeder van Jezus was erbij. Ook 
+                            Jezus en zijn leerlingen waren op de 
+                            bruiloft uitgenodigd. Toen de wijn op 
+                            was, zei de moeder van Jezus aan 
+                            haar Zoon: “Ze hebben geen wijn 
+                            meer.” Aan de dienaren gebood zij 
+                            alles te doen wat Hij hun zou zeggen. 
+                            Nu stonden daar zes grote stenen 
+                            kruiken.
+                        </div>
+                        <div class="kolom">
+                            Jezus sprak tot de dienaren:
+                            “Vul de kruiken met water!” De dienaren vulden de kruiken 
+                            tot aan de rand. Dan zei Jezus tot hen: “Neem er nu van en 
+                            breng het naar de spijzenmeester!” Zo gebeurde het. De 
+                            Spijzenmeester was heel verbaast. Het water was namelijk in 
+                            wijn veranderd! Dit was het eerste wonder van Jezus. Zo 
+                            openbaarde Jezus zijn goddelijke macht, en zijn leerlingen 
+                            geloofden in Hem. 
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud"  id="a-les10-bruiloft-te-kana">
+                    <div class="regels">
+                        <div class="grote-regel">Het wonder op de bruiloft te Kana openbaarde de goddelijke macht van Jezus, omdat Hij water in wijn kan veranderen.</div>
+                        <div class="grote-regel">Daardoor toont Jezus ons, dat Hij in het Altaarsacrament brood in zijn Vlees en wijn in zijn Bloed kan veranderen.</div>
+                    </div>
+                </div>
+                <div class="slide vragen">
+                    <div class="vragen-en-antwoorden">
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat verandert Jezus op de bruiloft te Kana?</div>
+                            <div class="antwoord verborgen">Jezus verandert water in wijn.</div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat verandert Jezus in het Sacrament des Altaars?</div>
+                            <div class="antwoord verborgen">Jezus verandert het water en de wijn in zijn bloed.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide inhoud"  id="a-les10-broodvermenigvuldiging">
+                    <div class="inhoud-elementen">
+                        <div class="hoofding-elementen">
+                            <h2>De wonderbare broodvermenigvuldiging</h2>
+                        </div>
+                    </div>
+                    <div class="tekst">
+                        <div class="kolom">
+                            Jezus trok zich met zijn leerlingen 
+                            terug op een eenzame plaats. 
+                            Maar een grote menigte volgde 
+                            hen. Toen Jezus de vele mensen zag, 
+                            die niets te eten hadden, kreeg Hij 
+                            medelijden met hen. Zijn leerlingen vonden een jongen die 
+                            vijf broden en twee vissen bij zich had. Maar dat zou veel te 
+                            weinig zijn voor zo veel mensen!
+                        </div>
+                        <div class="kolom">
+                            Jezus liet de mensen gaan
+                            zitten. Toen nam Hij de vijf broden en twee vissen, blikte op 
+                            naar de hemel, zegende het, brak het en gaf het aan zijn 
+                            leerlingen. Zij verdeelden het onder de mensen. Allen aten en 
+                            hadden genoeg. Toen de leerlingen de overgebleven brokken 
+                            verzamelden, vulden ze daarmee twaalf korven vol. Er waren 
+                            daar ongeveer vijfduizend mannen, en daarbij nog vele 
+                            vrouwen en kinderen. 
+                        </div>
+                    </div>
+                </div>
+                <div class="slide onthoud"  id="a-les10-broodvermenigvuldiging">
+                    <div class="regels">
+                        <div class="grote-regel">De wonderbare broodvermenigvuldiging openbaart de goddelijke macht van Jezus.</div>
+                        <div class="grote-regel">Daardoor toont Jezus, dat Hij in het Sacrament des Altaars
+                            veel mensen met geestelijk voedsel voor de ziel kan spijzen, 
+                            namelijk met zijn Vlees en Bloed, zodat zij het eeuwige leven kunnen verwerven.</div>
+                    </div>
+                </div>
+                <div class="slide vragen">
+                    <div class="vragen-en-antwoorden">
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Waarmee spijzigt Jezus de mensen bij de wonderbare broodvermenigvuldiging?</div>
+                            <div class="antwoord verborgen">Met brood.</div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Waarmee spijzigt Jezus de mensen in het Altaarsacrament?</div>
+                            <div class="antwoord verborgen">Met zijn Lichaam.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             
             
         </div>    
