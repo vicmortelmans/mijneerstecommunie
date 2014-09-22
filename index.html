@@ -14,16 +14,18 @@
         <script src="jquery.fullPage.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-            $('#fullpage').fullpage({
-            //                    verticalCentered: false,
-            loopHorizontal: false,
-            scrollOverflow: true,
-            anchors: ['titel', 'les1', 'les2', 'les3', 'les4', 'les5', 'les6', 'gebodgod1', 'gebodgod2', 'gebodgod3', 'gebodgod4', 'gebodgod5', 'gebodgod6', 'gebodgod7', 'gebodgod8', 'les7', 'les8', 'les9', 'les10'],
-            menu: '#menu'
-            });
-            $('.antwoord').on('click', function() {
-            $(this).toggleClass('verborgen');
-            });
+                if (window.location.hash.indexOf("print") == -1) {
+                    $('#fullpage').fullpage({
+                        //                    verticalCentered: false,
+                        loopHorizontal: false,
+                        scrollOverflow: true,
+                        anchors: ['titel', 'les1', 'les2', 'les3', 'les4', 'les5', 'les6', 'gebodgod1', 'gebodgod2', 'gebodgod3', 'gebodgod4', 'gebodgod5', 'gebodgod6', 'gebodgod7', 'gebodgod8', 'les7', 'les8', 'les9', 'les10'],
+                        menu: '#menu'
+                    });
+                    $('.antwoord').on('click', function() {
+                        $(this).toggleClass('verborgen');
+                    });
+                }
             });
         </script>
     </head>
@@ -52,7 +54,7 @@
         <div id="fullpage">
             
             
-            <div class="section inhoud" id="a-titel">
+            <div class="section" id="a-titel">
                 <div class="inhoud-elementen">
                     <div class="titel">
                         <p>Voorbereiding op de eerste communie</p>
