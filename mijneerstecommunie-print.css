@@ -1,0 +1,15 @@
+.section, .slide {
+    background-image: none;
+}
+
+.section {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+.tekst {
+    position: static;
+}   
