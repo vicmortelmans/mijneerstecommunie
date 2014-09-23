@@ -1,9 +1,14 @@
 .section, .slide {
-    background-image: none;
+    background-image: none !important;
 }
 
 .section {
-    page-break-before: always;
+    page-break-after: always;
+}
+
+.titel {
+    width: 100%;
+    color: gray;
 }
 
 #menu {
@@ -13,3 +18,111 @@
 .tekst {
     position: static;
 }   
+
+.regels {
+    text-align: center;
+    padding: 0;
+    font: 14pt/17pt courier;
+}
+
+.regels-tekst {
+    text-align: right;
+    padding: 0;
+    font: 16pt/20pt courier;
+}
+
+.grote-regel {
+    padding: 0px;
+    display: block;
+    background-color: white;
+    background-image: none;
+    width: 100%;
+    margin: 24px;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.regel, .kleine-regel {
+    padding: 0px;
+    display: block;
+    vertical-align: top;
+    background-color: white;
+    background-image: none;
+    width: 100%;
+    margin: 24px;
+    margin-left: 48px;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.regel-prent {
+    float: right;
+    clear: both;
+    display: static;
+    vertical-align: top;
+    width: 300px;
+    margin: 24px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 6px 12px 0px #000;
+    -moz-box-shadow: 0px 6px 12px 0px #000;
+    box-shadow: 0px 6px 12px 0px #000;
+}
+
+img.geplakt {
+    margin-bottom: 12px;
+    float: right;
+    clear: both;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.vragen-en-antwoorden {
+    text-align: center;
+    padding: 0;   
+}
+
+.vraag-en-antwoord {
+    padding: 12pt;
+    display: block;
+    background-color: lightgray;
+    width: 100%;
+    margin: 18px;
+    font: 14pt/17pt serif;
+    color: black;
+    text-align: left;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.antwoord, .antwoord.verborgen {
+    margin: 24px 0;
+    padding: 12px;
+    background-color: lightgray;
+    color: darkgray;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.onthoud {
+    background-color: white;
+}
+
+.vragen {
+    background-color: white; 
+    background-image: none;
+}
