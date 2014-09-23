@@ -5,8 +5,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <style type="text/css">
         </style>
-        <link rel="stylesheet" href="jquery.fullPage.css" type="text/css" media="screen"/>
-        <link rel="stylesheet" href="mijneerstecommunie.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="jquery.fullPage.css" type="text/css"/>
+        <link rel="stylesheet" href="mijneerstecommunie.css" type="text/css"/>
         <link rel="icon" type="image/png" href="favicon.ico"/>
         <script src="jquery-1.11.1.min.js"></script>
         <script src="jquery.easings.min.js"></script>
@@ -15,8 +15,8 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 if (window.location.hash.indexOf("print") == -1) {
+                    // FOR SCREEN
                     $('#fullpage').fullpage({
-                        //                    verticalCentered: false,
                         loopHorizontal: false,
                         scrollOverflow: true,
                         anchors: ['titel', 'les1', 'les2', 'les3', 'les4', 'les5', 'les6', 'gebodgod1', 'gebodgod2', 'gebodgod3', 'gebodgod4', 'gebodgod5', 'gebodgod6', 'gebodgod7', 'gebodgod8', 'les7', 'les8', 'les9', 'les10', 'les11', 'les12'],
@@ -25,6 +25,10 @@
                     $('.antwoord').on('click', function() {
                         $(this).toggleClass('verborgen');
                     });
+                } else {
+                    // FOR PRINT
+                    $("link[href='jquery.fullPage.css']").remove();
+                    $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'mijneerstecommunie-print.css') );
                 }
             });
         </script>
