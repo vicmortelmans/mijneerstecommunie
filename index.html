@@ -25,6 +25,22 @@
                     $('.antwoord').on('click', function() {
                         $(this).toggleClass('verborgen');
                     });
+                    $('.vraagwoord-op').on('click', function() {
+                        $(this).parents('.vraagwoord').insertBefore($(this).parents('.vraagwoord').prev());
+                        var antwoordwoord = $(this).parents('.brede-vraag-en-antwoord').find('.antwoordwoord');
+                        antwoordwoord.text('');
+                        $(this).parents('.vraagwoorden').find('.vraagwoord').each(function() {
+                            antwoordwoord.text(antwoordwoord.text() + $(this).attr('data-letter'));
+                        });
+                    });
+                    $('.vraagwoord-neer').on('click', function() {
+                        $(this).parents('.vraagwoord').insertAfter($(this).parents('.vraagwoord').next());
+                        var antwoordwoord = $(this).parents('.brede-vraag-en-antwoord').find('.antwoordwoord');
+                        antwoordwoord.text('');
+                        $(this).parents('.vraagwoorden').find('.vraagwoord').each(function() {
+                            antwoordwoord.text(antwoordwoord.text() + $(this).attr('data-letter'));
+                        });
+                    });
                 } else {
                     // FOR PRINT
                     $("link[href='jquery.fullPage.css']").remove();
@@ -65,7 +81,7 @@
                     <div class="titel">
                         <p>Voorbereiding op de eerste communie</p>
                     </div>
-                    <div class="tekst">
+                    <div class="tekst" id="navigatie-instructie">
                         <div class="kolom">
                             <p>Navigeer naar boven en beneden tussen de lessen en naar rechts en links binnen iedere les.</p>
                         </div>
@@ -214,6 +230,7 @@
                 </div> 
                 <div class="slide onthoud">
                     <img class="breed" src="img/de-smalle-weg.jpg"></img>
+                    <div class="scroll-buffer"> </div>
                 </div>
                 <div class="slide vragen">
                     <div class="vragen-en-antwoorden">
@@ -238,14 +255,16 @@
                         <div class="tekst">
                             <p>Hans is bezig met zijn huiswerk. Plotseling komt bij hem de gedachte op om buiten te gaan spelen. De duivel fluistert hem toe: "Laat het huiswerk liggen! Spelen is veel mooier!" De engelbewaarder echter herinnert Hans eraan, dat zijn moeder gezegd heeft: "Eerst moet je je huiswerk afmaken, daarna mag je gaan spelen"</p>
                             <p>Hans denkt na, wat hij zal doen...</p>
-                            <img src="img/het-verstand-en-de-wil.jpg"/>                                
+                            <div class="prent">
+                                <img class="geplakt" src="img/het-verstand-en-de-wil.jpg"/>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide onthoud">
                     <div class="regels">
-                        <div class="grote-regel">1. Hans denkt na... Hij <b>weet</b> dus duidelijk dat hij iets slecht doet als hij zijn moeder niet gehoorzaamt.</div> 
-                        <div class="grote-regel">2. Hans denkt na, wat hij zal doen... Hij <b>wil</b> dus met een duidelijke bedoeling iets slecht doen, als hij zijn moeder niet gehoorzaamt.</div> 
+                        <div class="grote-regel">Hans denkt na... Hij <b>weet</b> dus duidelijk dat hij iets slecht doet als hij zijn moeder niet gehoorzaamt.</div> 
+                        <div class="grote-regel">Hans denkt na, wat hij zal doen... Hij <b>wil</b> dus met een duidelijke bedoeling iets slecht doen, als hij zijn moeder niet gehoorzaamt.</div> 
                     </div>
                 </div> 
                 <div class="slide onthoud">
@@ -270,7 +289,9 @@
                         </div>
                         <div class="tekst">
                             <p>Wie een gebod van de goede God wetens (hij weet dat het zonde is) en willens (hij wil dat doen, hij wordt niet gedwongen) overtreedt, begaat een zonde. Maar niet alle zonden wegen even zwaar. Er zijn zonden die de ziel van de goede God scheiden; wij noemen dat doodzonden (of zware zonden). Er zijn ook zonden die de ziel voor God bevlekken; wij noemen dat dagelijkse zonden. </p>
-                            <img src="img/zonde-doodzonde.jpg"/>                                
+                            <div class="prent">
+                                <img class="geplakt" src="img/zonde-doodzonde.jpg"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -553,6 +574,7 @@
                 </div>
                 <div class="slide onthoud">
                     <div class="regels-tekst">
+                        <div class="regel-prent"><img src="img/de-barmhartige-samaritaan.jpg"/></div>
                         <div class="tekst">
                             <p><b>De Barmhartige Samaritaan</b></p>
                             <div class="kolom">
@@ -591,7 +613,6 @@
                                 “Ga, en doe gij evenzo”.
                             </div>
                         </div>
-                        <div class="regel-prent"><img src="img/de-barmhartige-samaritaan.jpg"/></div>
                     </div>
                 </div>
                 <div class="slide onthoud">
@@ -922,8 +943,8 @@
                             Na de biecht bid ik de penitentie of doe de boete, die mij de priester tot verzoening voor mijn zondenstraffen opgedragen heeft. 
                         </div>
                         <div>
-                            <div class="regel">Ik wil Jezus danken voor de vergeving van mijn zonden </div>
                             <div class="regel-prent"><img src="img/kinderen-biechten.jpg"/></div>
+                            <div class="regel">Ik wil Jezus danken voor de vergeving van mijn zonden </div>
                         </div>
                     </div>
                 </div>
@@ -1152,7 +1173,8 @@
                 </div>
                 <div class="slide onthoud">
                     <div class="regels-tekst">
-                         <div class="tekst">
+                        <div class="regel-prent"><img src="img/jezus-bij-misoffer.png"/></div>
+                        <div class="tekst">
                              <div><b>Jezus is het ware hemelbrood</b></div>
                              <div class="kolom">
                                  De volksmenigte wilde Jezus tot een aardse koning maken,
@@ -1180,11 +1202,11 @@
                                  bleven bij Hem.
                              </div>
                          </div>
-                         <div class="regel-prent"><img src="img/jezus-bij-misoffer.png"/></div>
                     </div>
                 </div>
                 <div class="slide onthoud">
                     <div class="regels-tekst">
+                        <div class="regel-prent"><img src="img/kruis-misoffer.png"/></div>
                         <div class="tekst">
                             <div><b>Het Laatste Avondmaal</b></div>
                             <div class="kolom">
@@ -1210,7 +1232,6 @@
                                 in de Heilige Mis.
                             </div>
                         </div>
-                        <div class="regel-prent"><img src="img/kruis-misoffer.png"/></div>
                     </div>
                 </div>
                 <div class="slide vragen">
@@ -1294,8 +1315,151 @@
                             <b>Confiteor</b>
                             <p>Bij de gebeden aan de voet van het altaar bekennen de priester en de gelovigen hun zonden. De priester bidt God om vergiffenis van de zonden. Na de bekentenis en de bede om vergiffenis waagt de priester het om tot het altaar op te stijgen.</p>
                         </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-3-kyrie.png"/>
+                            <b>Kyrie eleison</b>
+                            <p>De priester kust het altaar, dat een zinnebeeld van onze Heer Jezus Christus is, en bidt aan de epistelzijde het Introïtus. Dan gaat hij in het midden voor het altaar en bid: Heer ontferm u over ons.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-4-gloria.png"/>
+                            <b>Gloria in excelsis Deo</b>
+                            <p>In de meeste heilige Missen bidt de priester daarop het Gloria, de lofzang der Engelen die aan de herders de geboorte van Jezus verkondigen.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-5-lezing.png"/>
+                            <b>Lezing</b>
+                            <p>Na de oratie verkondigt de priester het woord Gods. Eerst de lezing aan de epistelzijde...</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-6-evangelie.png"/>
+                            <b>Evangelie</b>
+                            <p>... dan het evangelie aan de evangeliezijde. Daarbij maakt de priester kruisjes uit eerbied voor de woorden en daden van onze Heer, waarover het evangelie ons bericht.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-7-credo.png"/>
+                            <b>Credo</b>
+                            <p>Op zon- en feestdagen houdt de priester een preek, waarin hij het woord Gods uitlegt. Dan bidt hij de geloofsbelijdenis in het midden voor het altaar. Hij buigt zijn knie bij de woorden: ‘Hij heeft vlees aangenomen door de Heilige Geest uit de Maagd Maria, en is mens geworden’.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-8-offerande.png"/>
+                            <b>Offerande</b>
+                            <p>Bij de offerande draagt de priester offergaven op: brood en wijn. De priester spreekt de offerandegebeden tot de hemelse Vader en aanroept de Heilige Geest, opdat gaven zal heiligen.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-9-lavabo.png"/>
+                            <b>Lavabo</b>
+                            <p>De priester wast zijn handen aan de Epistelzijde, om met zuivere handen het offer van Jezus in de heilige Mis te voltrekken. Daarna bidt de priester om zijn offer en dat van de aanwezige gelovigen God welgevallig te maken.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-10-sanctus.png"/>
+                            <b>Sanctus</b>
+                            <p>De priester bidt de Secreta (een stil gebed) en stemt de prefatie aan. Dit is de plechtige lofprijzing van God, die met het driemaal heilig (Sanctus) afsluit: ‘Heilig, heilig, heilig zijt Gij, God der heerscharen; Hemel en aarde zijn vervuld van uw heerlijkheid...’</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-11-miscanon.png"/>
+                            <b>Miscanon</b>
+                            <p>Na het Sanctus begint de canon van de Mis. De priester bidt stil, omdat zich nu het onvatbare geheim van de Consecratie gaat voltrekken. De priester is enkel nog daar voor God, om in vereniging met Jezus het wonder van de tegenwoordigstelling van het Lichaam en Bloed van onze Heiland onder de gedaanten brood en wijn te voltrekken.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-12-consecratie.png"/>
+                            <b>Consecratie</b>
+                            <p>Het hoogtepunt van de heilige Mis is de Consecratie. Door de woorden van de priester “Dit is mijn Lichaam” en “Dit is mijn Bloed” gebeurt het wonder: Brood en wijn worden het Lichaam en Bloed van Christus.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-13-pater-noster.png"/>
+                            <b>Pater noster</b>
+                            <p>De priester sluit de canon van de Mis met een plechtige lofzang. Dan bidt hij het Onze Vader, dat ons op de Communie voorbereidt.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-14-agnus-dei.png"/>
+                            <b>Agnus Dei</b>
+                            <p>Vóór de nuttiging van de heilige Communie bidt de priester om vergeving van zijn zonden: ‘Lam Gods, dat wegneemt de zonden van de wereld, ontferm U over ons ...’ ‘O Heer, ik ben niet waardig ...’</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-15-communie.png"/>
+                            <b>Communie</b>
+                            <p>De priester communiceert en brengt de aanwezige gelovigen het Lichaam van Christus: ‘Zie het Lam Gods, dat de zonden der wereld wegneemt. . .’</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-16-zegen.png"/>
+                            <b>Zegen</b>
+                            <p>De priester bidt na de heilige Communie de postcommunie (post = na) aan de epistelzijde. Daarna gaat hij naar hetmidden van het altaar, vanwaar hij de zegen geeft.</p>
+                        </div>
+                        <div class="regel">
+                            <img class="geplakt" src="img/mis-17-slotevangelie.png"/>
+                            <b>Slotevangelie</b>
+                            <p>Na de zegen wendt de priester zich naar de evangeliezijde, waar hij het slotevangelie leest.</p>
+                        </div>
+                        <div class="scroll-buffer"> </div>
                     </div>
                 </div> 
+                <div class="slide vragen">
+                    <div class="vragen-en-antwoorden">
+                        <div class="brede-vraag-en-antwoord">
+                            <div class="vraag">Zet de woorden in de juiste volgorde van het verloop van een heilige Mis. De letters vormen één woord. Wie vindt het woord?</div>
+                            <div class="vraagwoorden">
+                                <div class="vraagwoord" data-letter="W"> &mdash;&nbsp;Agnus&nbsp;Dei&nbsp;<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;W&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="I"> &mdash;&nbsp;Credo<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;I&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="K"> &mdash;&nbsp;Consecratie<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;K&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="C"> &mdash;&nbsp;Introibo&nbsp;ad&nbsp;altare&nbsp;Dei<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;C&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="E"> &mdash;&nbsp;Offerande<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;E&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="A"> &mdash;&nbsp;Communie<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;A&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="N"> &mdash;&nbsp;Evangelie<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;N&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="M"> &mdash;&nbsp;Kyrie&nbsp;Eleison<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;M&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="D"> &mdash;&nbsp;Pater&nbsp;Noster<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;D&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="L"> &mdash;&nbsp;Slotevangelie<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;L&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="B"> &mdash;&nbsp;Lavabo<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;B&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="O"> &mdash;&nbsp;Confiteor<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;O&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="N"> &mdash;&nbsp;Miscanon<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;N&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="U"> &mdash;&nbsp;Lezing<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;U&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="M"> &mdash;&nbsp;Gloria&nbsp;in&nbsp;excelsis&nbsp;Deo<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;M&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="A"> &mdash;&nbsp;Sanctus<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;A&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                                <div class="vraagwoord" data-letter="A"> &mdash;&nbsp;Zegen<b><span class="vraagwoord-op">&#x25C0;</span>&nbsp;A&nbsp;<span class="vraagwoord-neer">&#x25B6;</span></b>  </div>
+                            </div>
+                            <div class="antwoordwoord"></div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="slide vragen">
+                    <div class="vragen-en-antwoorden">
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Waarom kust de priester het altaar als hij na het Confiteor de trappen opgaat?</div>
+                            <div class="antwoord verborgen"></div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Aan welke kant van het altaar staat het misboek als de priester de oratie bidt?</div>
+                            <div class="antwoord verborgen"></div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Bij welke woorden van de priester gebeurt de consecratie?</div>
+                            <div class="antwoord verborgen"></div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Waarop bereidt het Onze vader ons voor?</div>
+                            <div class="antwoord verborgen"></div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="slide vragen">
+                    <div class="vragen-en-antwoorden">
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">De priester draagt het woord Gods eerst bij de L<span class="antwoord inline verborgen">ezing</span> aan de E<span class="antwoord inline verborgen">pistel</span>-zijde, daarna het E<span class="antwoord inline verborgen">vangelie</span> aan de E<span class="antwoord inline verborgen">vangelie</span>–zijde voor.</div>
+                            <div class="antwoord verborgen"></div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat is het ‘Lavabo’?</div>
+                            <div class="antwoord verborgen"></div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat doet de priester, als hij bij het Credo de woorden zegt: “En hij heeft het vlees aangenomen door de Heilige Geest, uit de Maagd Maria en is mens geworden.”</div>
+                            <div class="antwoord verborgen"></div>
+                        </div>
+                        <div class="vraag-en-antwoord">
+                            <div class="vraag">Wat betekend de Griekse uitdrukking ‘Kyrie eleison’?</div>
+                            <div class="antwoord verborgen"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             

@@ -1,5 +1,10 @@
+#fullpage {
+    width: 21cm;
+}
+
 .section, .slide {
     background-image: none !important;
+    clear: both;
 }
 
 .section {
@@ -11,11 +16,34 @@
     color: gray;
 }
 
-#menu {
+#menu, #navigatie-instructie {
     display: none;
 }
 
+.hoofding-elementen {
+    margin-left: 24px;
+    padding-top: 0;
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+    font: bolder 36pt/36pt serif;
+    color: darkgray;
+    text-transform: uppercase;
+}
+
+h2 {
+    display: inline;
+    margin: 0 0 0 12px;
+    text-align: center;
+    font: lighter 36pt/36pt serif;
+    color: darkgray;
+    text-transform: uppercase;
+}
+
 .tekst {
+    padding: 12px;
     position: static;
 }   
 
@@ -61,6 +89,7 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    clear: both;
 }
 
 .regel-prent {
@@ -68,18 +97,22 @@
     clear: both;
     display: static;
     vertical-align: top;
-    width: 300px;
-    margin: 24px;
+    width: 250px;
+    margin: 0 0 12px 0;
     text-align: center;
     border-radius: 5px;
     overflow: hidden;
-    -webkit-box-shadow: 0px 6px 12px 0px #000;
-    -moz-box-shadow: 0px 6px 12px 0px #000;
-    box-shadow: 0px 6px 12px 0px #000;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.regel-prent img {
+    width: 250px;
 }
 
 img.geplakt {
-    margin-bottom: 12px;
+    margin: 0 0 12px 12px;
     float: right;
     clear: both;
     -webkit-box-shadow: none;
@@ -108,8 +141,8 @@ img.geplakt {
 }
 
 .antwoord, .antwoord.verborgen {
-    margin: 24px 0;
-    padding: 12px;
+    margin: 12px 0 0 0;
+    padding: 0;
     background-color: lightgray;
     color: darkgray;
     border-radius: 0;

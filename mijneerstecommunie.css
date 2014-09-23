@@ -202,6 +202,11 @@ img.geplakt {
     box-shadow: 0px 3px 6px 0px #000;
 }
 
+.scroll-buffer {
+    height: 200px;
+    
+}
+
 .vragen-en-antwoorden {
     text-align: center;
     padding: 0 100px;   
@@ -222,7 +227,26 @@ img.geplakt {
     box-shadow: 0px 6px 12px 0px #000;
 }
 
-.antwoord {
+.brede-vraag-en-antwoord {
+    padding: 18px;
+    display: inline-block;
+    background-color: #F19411;
+    width: 600px;
+    margin: 18px;
+    font: 18pt/21pt serif;
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 6px 12px 0px #000;
+    -moz-box-shadow: 0px 6px 12px 0px #000;
+    box-shadow: 0px 6px 12px 0px #000;
+}
+
+.vraagwoord {
+    display: inline;
+}
+
+.antwoord, .antwoordwoord {
     margin: 24px 0;
     padding: 12px;
     background-color: white;
@@ -231,6 +255,10 @@ img.geplakt {
     -webkit-box-shadow: 0px 0px 0px 0px #000;
     -moz-box-shadow: 0px 0px 0px 0px #000;
     box-shadow: 0px 0px 0px 0px #000;
+}
+
+.antwoord.inline {
+    padding: 0;
 }
 
 .antwoord.verborgen {
