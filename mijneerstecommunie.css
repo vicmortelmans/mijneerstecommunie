@@ -13,7 +13,7 @@
     display: inline;
     float: left;
     height: 48px;
-    width: 3%;
+    width: 4.17%;
     text-align: center;
 }
 #menu li a {
@@ -137,7 +137,7 @@ td {
     box-shadow: 0px 6px 12px 0px #000;
 }
 
-.grote-regel img.float {
+img.float {
     float: right; 
     margin-left: 12px;
 }
@@ -375,6 +375,16 @@ img.geplakt {
 
 #a-les12 {
     background-image: url(img/heilige-mis.jpg);
+    background-position: center center;
+}
+
+#a-les13 {
+    background-image: url(img/eucharistische-aanbidding.jpg);
+    background-position: center center;
+}
+
+#a-les14 {
+    background-image: url(img/communie-ontvangen.jpg);
     background-position: center center;
 }
 
