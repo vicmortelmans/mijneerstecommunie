@@ -25,6 +25,14 @@
     background-color: rgba(127,127,127,0.5);
 }
 
+table {
+    border-spacing: 12px;
+}
+ 
+td {
+    vertical-align: top;
+}
+ 
 .section, .slide {
     background-size: cover;
     background-attachment: fixed;
@@ -87,15 +95,6 @@ h2 {
 
 .tekst .groot {
     font: 16pt/20pt sans-serif;
-}
-
-table {
-    border-spacing: 0;
-}
-
-td {
-    vertical-align: middle;
-    text-align: center;
 }
 
 .kolom {
