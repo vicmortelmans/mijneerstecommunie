@@ -13,7 +13,7 @@
     display: inline;
     float: left;
     height: 48px;
-    width: 4.17%;
+    width: 4.15%;
     text-align: center;
 }
 #menu li a {
@@ -90,11 +90,12 @@ h2 {
 }
 
 table {
-    border-spacing: 12px;
+    border-spacing: 0;
 }
 
 td {
-    vertical-align: top;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .kolom {
@@ -140,6 +141,11 @@ td {
 img.float {
     float: right; 
     margin-left: 12px;
+}
+
+img.float-left {
+    float: left; 
+    margin-right: 12px;
 }
 
 .regel {
@@ -385,6 +391,11 @@ img.geplakt {
 
 #a-les14 {
     background-image: url(img/communie-ontvangen.jpg);
+    background-position: center center;
+}
+
+#a-les15 {
+    background-image: url(img/consecratie.png);
     background-position: center center;
 }
 

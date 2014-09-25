@@ -19,8 +19,12 @@
                     $('#fullpage').fullpage({
                         loopHorizontal: false,
                         scrollOverflow: true,
-                        anchors: ['titel', 'les1', 'les2', 'les3', 'les4', 'les5', 'les6', 'gebodgod1', 'gebodgod2', 'gebodgod3', 'gebodgod4', 'gebodgod5', 'gebodgod6', 'gebodgod7', 'gebodgod8', 'les7', 'les8', 'les9', 'les10', 'les11', 'les12', 'les13', 'les14'],
+                        anchors: ['titel', 'les1', 'les2', 'les3', 'les4', 'les5', 'les6', 'gebodgod1', 'gebodgod2', 'gebodgod3', 'gebodgod4', 'gebodgod5', 'gebodgod6', 'gebodgod7', 'gebodgod8', 'les7', 'les8', 'les9', 'les10', 'les11', 'les12', 'les13', 'les14', 'les15'],
                         menu: '#menu'
+                    });
+                    $('#printer').on('click', function() {
+                        window.location.hash = '#print';
+                        window.location.reload();
                     });
                     $('.antwoord').on('click', function() {
                         $(this).toggleClass('verborgen');
@@ -74,6 +78,7 @@
             <li data-menuanchor="les12"><a href="#les12">12</a></li>
             <li data-menuanchor="les13"><a href="#les13">13</a></li>
             <li data-menuanchor="les14"><a href="#les14">14</a></li>
+            <li data-menuanchor="les15"><a href="#les15">15</a></li>
         </ul>
         <div id="fullpage">
             
@@ -87,6 +92,17 @@
                         <div class="kolom">
                             <p>Navigeer naar boven en beneden tussen de lessen en naar rechts en links binnen iedere les.</p>
                         </div>
+                        <div class="kolom">
+                            <table>
+                                <tr>
+                                    <td><p><img src="img/media.png"/></p></td>
+                                    <td><p id="printer"><img src="img/printer.png"/></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Gebruik de lessen op PC, tablet of geprojecteerd in de klas.</p></td>
+                                    <td><p>Klik op de printer om lesbrieven af te drukken.</p></td>
+                                </tr>
+                            </table>
                     </div>
                 </div>
             </div>
@@ -1576,7 +1592,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide vragen">
+                <div class="slide onthoud">
                     <div class="vragen-en-antwoorden">
                         <div class="brede-vraag-en-antwoord">
                             <div class="vraag">Eerst legt de priester een wit <span class="antwoord inline verborgen">amict</span> op zijn 
@@ -1586,10 +1602,13 @@
                                 linkeronderarm en hangt de lange <span class="antwoord inline verborgen">stola</span> om zijn nek, 
                                 die hij van voor over de borst kruist. Tenslotte werpt hij het 
                                 <span class="antwoord inline verborgen">kazuifel</span> over zich heen.</div>
+                            <p>
+                                <img class="breed geplakt" src="img/paramenten.png"/>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="slide vragen">
+                <div class="slide onthoud">
                     <div class="vragen-en-antwoorden">
                         <div class="brede-vraag-en-antwoord">
                             <div class="vraag">Bij elke H. Mis bereidt de 
@@ -1611,6 +1630,9 @@
                                 dat de priester uitspreidt op 
                                 het altaar en waarop de kelk 
                                 komt te staan. </div>
+                            <p>
+                                <img class="breed geplakt" src="img/vaatwerk.png"/>
+                            </p>
                         </div>
                     </div>
                 </div>
