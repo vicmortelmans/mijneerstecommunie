@@ -33,7 +33,13 @@ td {
     vertical-align: top;
     text-align: center;
 }
- 
+
+#printer { 
+    cursor: pointer; 
+    cursor: hand; 
+    
+}
+
 .section, .slide {
     background-size: cover;
     background-attachment: fixed;
